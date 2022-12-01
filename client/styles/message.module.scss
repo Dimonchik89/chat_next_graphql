@@ -1,0 +1,53 @@
+@import "./vars";
+
+.message__user {
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: end;
+}
+
+.message {
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: start;
+}
+
+.message__container {
+    display: flex;
+    align-items: center;
+
+    .message__avatar {
+        width: 5rem;
+        height: 5rem;
+        background: $fiolet;
+        border-radius: 50%;
+        color: $gray;
+        font-size: 2rem;
+        text-align: center;
+        line-height: 5rem;
+    }
+
+    .message__wrapper {
+        margin-left: 1rem;
+
+        .message__content {
+            padding: 1rem 1.5rem;
+            border-radius: 1rem;
+            background: $message-bg;
+            display: flex;
+            flex-direction: column;
+
+            .message__user {
+                margin-bottom: 0;
+                font-size: 1.2rem;
+                font-weight: bold;
+                color: $orange;
+            }
+
+            .message__text {
+                font-size: 1.4rem;
+                color: $gray;
+            }
+        }
+    }
+}

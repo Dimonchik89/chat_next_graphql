@@ -1,0 +1,17 @@
+@import "./vars";
+
+.login {
+    width: 30%;
+    margin: 5rem auto;
+    padding: 3rem 5rem;
+    border: 1px solid $dark-blue;
+    border-radius: 1rem;
+
+    .login__title {
+        text-align: center;
+    }
+
+    .login__button {
+        text-align: center;
+    }
+}

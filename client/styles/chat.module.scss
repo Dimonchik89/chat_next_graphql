@@ -1,0 +1,39 @@
+@import "./vars";
+
+.chat {
+    width: 50%;
+    padding: 20px;
+    border: 2px solid $gray;
+    border-radius: 15px;
+    height: 80vh;
+    margin: 50px auto;
+    background: $dark-blue;
+    display: flex;
+    flex-direction: column;
+}
+
+.chat__message {
+    flex: 1 0 auto;
+    height: 80%;
+    overflow-y: auto;
+}
+
+.chat__message::-webkit-scrollbar {
+    width: 10px;
+}
+
+.chat__message::-webkit-scrollbar-track {
+    background-color: darkgrey;
+}
+
+.chat__message::-webkit-scrollbar-thumb {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.chat__form {
+    display: flex;
+}
+
+.chat__input {
+    flex: 1 0 auto;
+}
